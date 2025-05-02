@@ -1,5 +1,5 @@
 /* Integrantes: Douglas Daniel Ramirez Canales  Cuenta: 32151049
-             Josue Eliezer Castillo Soto     Cuenta: 32151059
+                Josue Eliezer Castillo Soto     Cuenta: 32151059
 
 
     Utilizando como base la pila indicada en el ejercicio anterior, desarrolle un programa
@@ -73,6 +73,7 @@ void reconstruccionPalabras() {
     int num_palabras = 0;
 
     // VALIDAR NÚMERO DE PALABRAS
+    //https://cplusplus.com/reference/string/stoi/?kw=stoi
     do {
         cout << "\nIngrese el número de palabras conocidas (mínimo 3): ";
         getline(cin, entrada);
@@ -130,7 +131,8 @@ void reconstruccionPalabras() {
     // RESULTADO
     cout << "\nResultado:\n";
     if (coincide)
-        cout << "La palabra reconstruida es CORRECTA.\n";
+        cout << "La palabra reconstruida es CORRECTA. Se formó: " << resultado << endl;
+
     else
         cout << "La palabra reconstruida NO es correcta. Se formó: " << resultado << endl;
 

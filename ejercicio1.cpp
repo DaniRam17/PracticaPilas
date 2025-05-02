@@ -25,12 +25,14 @@ private:
 public:
     
     //Plantilla Base
+    //Referencia https://cplusplus.com/reference/vector/vector/push_back/
     void push(const string& elemento) {
         elementos.push_back(elemento);
         cout << "\"" << elemento << "\" agregado a la pila." << endl;
     }
 
     //Plantilla Base
+    //referencia https://cplusplus.com/reference/vector/vector/pop_back/
     void pop() {
         if (estaVacia()) {
             cout << "La pila está vacía. No se puede hacer pop." << endl;
@@ -69,6 +71,7 @@ public:
     }
 
     //Plantilla Base
+    // Referencia  https://cplusplus.com/reference/vector/vector/rbegin/ y https://cplusplus.com/reference/vector/vector/rend/
     void mostrar() const {
         if (estaVacia()) {
             cout << "No se encuentran elementos en la pila ." << endl;
